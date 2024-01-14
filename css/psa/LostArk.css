@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0;}
+
+body{
+    background: black;
+    width: 100%;
+}
+
+.link-first{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 2vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'SBAggroB';
+}
+    /* 폰트적용 */
+
+.link-second{
+    text-decoration: none;
+    filter: invert(100%);
+    margin-left: auto;
+}
+.link-third{
+    text-decoration: none;
+    filter: invert(100%);
+    margin-right: 10%;
+}
+
+
+.link-secondary{
+    margin-left: auto;
+    margin-right: auto;
+    color: darkgrey;
+    text-shadow: 1px 1px 1px darkblue;
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 2%;
+    border-top: 1px solid rgb(115, 116, 117);
+    border-bottom: 1px solid rgb(115, 116, 117);
+    font-family: 'LINESeedKR-Bd';
+    /* 폰트적용 */
+}
+
+.video_w{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 1.5%;
+    padding-bottom: 56.25%;
+}
+iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+.main_image {
+    position: relative;
+    overflow: hidden;
+    margin-top: 5%;
+    /* display: inline-block; */
+}
+
+.square {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    background-color: rgba(75, 82, 104, 0.5); /* 0.5 for 50% transparency */
+    padding: 20px; 
+    border-radius: 10px;
+    text-align: center;
+    /* max-width: 600px; */
+}
+
+    .main_image img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .main_image_text0{
+        font-family: 'YClover-Bold';
+        margin: 0;
+        text-align: center;
+        font-size: 3vw;
+        color: aliceblue;
+        text-shadow: 1px 1px 1px blue;
+    }
+    .main_image_text1 {
+        margin: 0;
+        text-align: center;
+        /* line-height: 32px; */
+        text-shadow: 1px 1px 1px black;
+        font-family: 'LINESeedKR-Bd';
+        font-size: 1vw;
+        color: azure;
+    }
+
+.footer_wrap {
+    /* position: fixed; */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    /* background-color: #333; 배경색 설정 */
+}
+
+.footer_menu {
+    list-style: none;
+    padding: 0;
+}
+
+.footer_menu li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer_menu li:last-child {
+    margin-top: 1%;
+    margin-right: 0;
+}
+
+.footer_menu a {
+    text-decoration: none; /* 텍스트 데코레이션 제거 */
+    color: hotpink;
+    font-size: 1vw;
+}
+
+.footer_copyright {
+    color: white;
+    font-size: 1vw;
+ /* 상하 여백 설정 */
+}
