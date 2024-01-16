@@ -54,7 +54,10 @@
 				1000:{
 					items: 3
 				}
-			}
+			},
+			autoplay:true,
+			autoplayTimeout:5000,
+			autoplayHoverPause:true
 		});
 		$('.carousel-destination').owlCarousel({
 			center: false,
