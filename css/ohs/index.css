@@ -1,0 +1,276 @@
+@charset "utf-8";
+
+*{
+    margin: 0; padding: 0;
+}
+
+.container{
+    height: 150px;
+    margin-top: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    list-style: none;
+}
+
+.header-navbar>li{
+    list-style: none;
+}
+
+ul{
+    list-style: none;
+}
+
+
+.logobox{
+    position: relative;
+}
+
+.icon-bar{
+    background-color: red;
+}
+
+.navbar-toggle{
+    background-color: blue !important;
+}
+
+.logotxt{
+    color: white;
+    font-size: 26px;
+    position: absolute;
+    left: 20%;
+    bottom: -2%;
+    font-family: 'Giants-Bold';
+}
+
+.logoimg{
+    width: 170px; height: 150px;
+    z-index: 2;
+}
+
+.header-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    padding: 10px;
+
+}
+
+/* COMPANY~더보기까지 가로정렬하기 위한 코드 */
+/* https://www.heropy.dev/p/Ha29GI 참조*/
+.flexnav{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.flexcontent:hover{
+    color: white;
+}
+
+.navi{
+    float: center;
+    line-height: 130px;
+    margin-top: 3.5%;
+}
+
+.navi>li{
+    float: left;
+    width:140px; height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+
+.submenu>li>a{
+    height: 35px;  line-height: 35px; 
+    font-size: 14px; 
+    text-align: center;
+    color: white;
+}
+
+.submenu{
+    width: 180px; position: absolute; z-index: 1;
+    text-align: center;
+    display: none;
+    padding: 0;
+}
+
+.submenu>li,
+.plus{
+    width: 160px; height: 40px;
+    background-color: #000;
+    color: #8f96a3;
+    line-height: 40px;
+}
+
+.navi>li>a,.plus>li>a{
+    width: 160px; height: 40px;
+    color: #8f96a3;
+}
+
+.submenu li:hover{
+    background: white;
+    color: black;
+}
+
+.submenu>li>a:hover{
+    color: black;
+    font-weight: bold;
+}
+
+.navi>li>a{
+    height: 40px; width: 180px; 
+    line-height: 40px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    text-align: center;
+}
+
+#content{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#content>h1{
+    color: white;
+    font-size: 4em;
+    font-style: italic;
+    text-shadow: 2px 2px 3px #222, 2px 2px 3px #222;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.content-container{
+    width: 1000px; height: 1200px;
+    
+    margin: 0 auto;
+    z-index: -2;
+}
+
+
+.content{
+    color: aqua;
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    background: black;
+    margin-bottom: 50px;
+}
+
+.footer-left {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin-bottom: -30px; 
+}
+
+.footer-left>li {
+    margin-right: 10px;
+    text-align: center;
+    color: #a1a7b5;
+    position: relative;
+}
+
+.footer-left>li>a {
+    color: #a1a7b5;
+    text-decoration: none;
+    padding: 0 10px;
+    position: relative;
+    display: block;
+    line-height: 60px;
+}
+
+/* li에 hover했을때 밑줄이 생기는 애니메이션 효과를 주기 위한 코드 */
+.footer-left>li::before { 
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: #a1a7b5;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-left>li:hover::before {
+    transform: scaleX(1);
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-left: auto;
+}
+
+.footer-right img {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.footer-content {
+    color: #a1a7b5;
+    font-size: 14px;
+    margin-top: 10px; 
+    align-self: flex-start;
+}
+
+.footer-logoimg{
+    margin-top: 10px;
+}
+
+/* 웹 화면 위로 이동하는 버튼 css  */
+#scrollToTop {
+    width: 50px;
+    height: 40px;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    background-color: white;
+    border: 1px solid black; 
+    padding: 10px;
+    cursor: pointer;
+    display: none; 
+    z-index: 10; 
+    text-align: center; 
+    line-height: 1.4; 
+    color: black; 
+    font-size: 20px; 
+}
+
+#scrollToTop>p{
+    font-size: 11px;
+}
+
+#scrollToTop:hover {
+    border-color: black; 
+    background-color: gray;
+}
